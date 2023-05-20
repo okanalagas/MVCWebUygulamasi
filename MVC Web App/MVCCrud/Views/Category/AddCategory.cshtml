@@ -1,0 +1,21 @@
+﻿@model Category
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+<h2>AddCategory</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.TextBoxFor(x => x.CategoryName)
+    </div>
+    <div>
+        @Html.TextBoxFor(x => x.Description)
+    </div>
+    <div>
+        <button class="btn btn-primary">
+            Add Category
+        </button>
+    </div>
+}

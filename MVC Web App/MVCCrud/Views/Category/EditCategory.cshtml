@@ -1,0 +1,22 @@
+﻿@model Category
+@{
+    ViewBag.Title = "EditCategory";
+}
+
+<h2>EditCategory</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(x=>x.CategoryID)
+    <div>
+        @Html.TextBoxFor(x => x.CategoryName)
+    </div>
+    <div>
+        @Html.TextBoxFor(x => x.Description)
+    </div>
+    <div>
+        <button class="btn btn-primary">
+            Edit
+        </button>
+    </div>
+}
